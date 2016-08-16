@@ -16,6 +16,8 @@ public class Main {
             System.out.println("HOST: " + host
                     + ", LOGIN: " + login
                     + ", PASSWORD: " + password);
+            // TODO: тут по идее тоже может произойти ошибка и её надо в try-catch
+            fis.close();
         }catch (IOException ex){
             ex.printStackTrace();
         }
